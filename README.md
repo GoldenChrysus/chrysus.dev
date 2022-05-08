@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This software is GNU GPL v3 licensed. All copyright rights are reserved by me, Patrick Golden. You may **not** use this repo **without** adhering to the following restrictions:
 
-- Acknowledgement of copyright holder (me) **on published website**: either via full publishing of the license as-is, including all copyright and license notices in source files, from this repository or via a link to https://github.com/GoldenChrysus/chrysus.dev or https://chrysus.dev
+- Acknowledgement of copyright holder (me) **on published website** and **in published repository**: either via full publishing of the license as-is, including all copyright and license notices in source files, from this repository or via a link to https://github.com/GoldenChrysus/chrysus.dev or https://chrysus.dev
 - Usage of same license: your source code must include this repository's [license](/LICENSE) **in full and without changes**
 - Disclosure of source code: you must **publish your source code**, in full, publicly
 - Statement of changes: your repository must describe, in full, **all changes made** with respect to the repository that is published at https://github.com/GoldenChrysus/chrysus.dev
