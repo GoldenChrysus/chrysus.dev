@@ -1,0 +1,28 @@
+﻿<!--
+ Copyright (C) 2022  Patrick D. Golden, @GoldenChrysus (at GitHub.com), chrysus.dev, or associated affiliates
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<div id="hero" class="grid grid-nogutter surface-section text-800 min-h-screen" ngsRevealSet [ngsInterval]="50" [ngsSelector]="'.reveal'">
+	<div class="col-12 md:col-12 p-4 md:p-8 text-center md:text-left flex align-items-center min-h-full">
+		<section>
+			<div class="code text-sm reveal text-green-200">{{ "home:introducing" | i18next: { format: "lowercase" } }} $</div>
+			<span class="block text-7xl md:text-8xl font-bold mb-1 reveal">Patrick Golden</span>
+			<div class="text-6xl md:text-7xl text-primary font-bold mb-3 reveal">{{ "home:full_stack_engineer" | i18next }}</div>
+			<p class="mt-0 mb-4 text-700 text-xl line-height-3 reveal">{{ "home:intro" | i18next }}</p>
+			<app-socials></app-socials>
+			<p class="mt-0 mb-4 text-700 text-sm text-gray-600 reveal">{{ "home:location" | i18next }}</p>
+		</section>
+	</div>
+</div>

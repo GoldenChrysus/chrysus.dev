@@ -1,0 +1,22 @@
+{
+	"intro": "I enjoy trying out new technologies to discover interesting ways to approach problems and design solutions. You can find me frequently creating projects on GitHub in a variety of languages and technology stacks.",
+	"php": "PHP",
+	"javascript": "JavaScript",
+	"typescript": "TypeScript",
+	"postgresql": "PostgreSQL",
+	"sql_server": "SQL Server",
+	"graphql": "GraphQL",
+	"ruby": "Ruby",
+	"python": "Python",
+	"mysql": "MySQL",
+	"c_sharp": "C#",
+	"java": "Java",
+	"aws": "AWS",
+	"docker": "Docker",
+	"google_cloud": "Google Cloud",
+	"emberjs": "Ember.js",
+	"ruby_on_rails": "Ruby on Rails",
+	"json_api": "JSON:API",
+	"stripe": "Stripe",
+	"react": "React"
+}

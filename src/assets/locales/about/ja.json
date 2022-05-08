@@ -1,0 +1,22 @@
+{
+  "aws": "AWS",
+  "c_sharp": "C#",
+  "docker": "Docker",
+  "emberjs": "Ember.js",
+  "google_cloud": "グーグルクラウド",
+  "graphql": "グラフQL",
+  "intro": "わたくしは、問題に取り組み、解決策を設計する興味深い方法が見つけられるように新しいテクノロジーを試すと嬉しいです。よくGitHubで様々なプログラミング言語やテクノロジーでプロジェクトを開発しております。",
+  "java": "ジャバ",
+  "javascript": "ジャバスクリプト",
+  "json_api": "JSON:API",
+  "mysql": "MySQL",
+  "php": "PHP",
+  "postgresql": "PostgreSQL",
+  "python": "パイソン",
+  "react": "リアクト",
+  "ruby": "ルビー",
+  "ruby_on_rails": "ルビーオンレイルズ",
+  "sql_server": "SQL Server",
+  "stripe": "ストライプ",
+  "typescript": "TypeScript"
+}
