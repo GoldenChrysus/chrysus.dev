@@ -8,7 +8,8 @@ This software is GNU GPL v3 licensed. All copyright rights are reserved by me, P
 
 - Acknowledgement of copyright holder (me) **on published website**: either via full publishing of the license as-is, including all copyright and license notices in source files, from this repository or via a link to https://github.com/GoldenChrysus/chrysus.dev or https://chrysus.dev
 - Usage of same license: your source code must include this repository's [license](/LICENSE) **in full and without changes**
-- Disclosure of changes: your repository must describe, in full, all changes made in relation to the repository that is published at https://github.com/GoldenChrysus/chrysus.dev
+- Disclosure of source code: you must publish your source code, in full, publicly
+- Statement of changes: your repository must describe, in full, all changes made with respect to the repository that is published at https://github.com/GoldenChrysus/chrysus.dev
 
 ## Copyright
 
