@@ -12,7 +12,7 @@ This software is GNU GPL v3 licensed. All copyright rights are reserved by me, P
 
 ## Copyright
 
-Copyright &copy; 2022, Patrick Golden. All rights reserved.
+Copyright &copy; 2022, Patrick D. Golden, @GoldenChrysus (at GitHub.com), chrysus.dev, or associated affiliates. All rights reserved.
 
 ## Development server
 
