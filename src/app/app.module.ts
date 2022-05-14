@@ -17,24 +17,21 @@
  */
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeroComponent } from './hero/hero.component';
-import { HeaderComponent } from './header/header.component';
-
-import { TabMenuModule } from "primeng/tabmenu";
+import { I18NextModule } from 'angular-i18next';
+import { NgsRevealConfig, NgsRevealModule } from 'ngx-scrollreveal';
 import { MenubarModule } from "primeng/menubar";
-import { ButtonModule } from "primeng/button";
 import { CardModule } from "primeng/card";
 import { DividerModule } from "primeng/divider";
 import { ChipModule } from "primeng/chip";
 import { StyleClassModule } from "primeng/styleclass";
 
-import { NgsRevealConfig, NgsRevealModule } from 'ngx-scrollreveal';
+import { AppRoutingModule } from './app-routing.module';
 
 import { I18N_PROVIDERS } from './i18n';
-import { I18NextModule } from 'angular-i18next';
+
+import { AppComponent } from './app.component';
+import { HeroComponent } from './hero/hero.component';
+import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './about/skills/skills.component';
 import { SkillComponent } from './about/skills/skill/skill.component';
@@ -44,7 +41,8 @@ import { ProjectComponent } from './projects/project/project.component';
 import { SocialsComponent } from './hero/socials/socials.component';
 import { SocialComponent } from './hero/socials/social/social.component';
 import { LanguageComponent } from './header/language/language.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component';;
+import { AvailabilityComponent } from './availability/availability.component'
 
 @NgModule({
 	declarations: [
@@ -60,7 +58,8 @@ import { HomeComponent } from './home/home.component';
 		SocialsComponent,
 		SocialComponent,
 		LanguageComponent,
-		HomeComponent
+		HomeComponent,
+		AvailabilityComponent
 	],
 	imports: [
 		NgsRevealModule,
@@ -70,8 +69,6 @@ import { HomeComponent } from './home/home.component';
 		I18NextModule.forRoot(),
 
 		StyleClassModule,
-		ButtonModule,
-		TabMenuModule,
 		MenubarModule,
 		CardModule,
 		DividerModule,

@@ -1,4 +1,4 @@
-﻿/**
+/**
  *
  * Copyright (C) 2022  Patrick D. Golden, @GoldenChrysus (at GitHub.com), chrysus.dev, or associated affiliates
  *
@@ -15,18 +15,28 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-import { Component, Input, OnInit } from '@angular/core';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-@Component({
-	selector: 'app-divider',
-	templateUrl: './divider.component.html',
-	styleUrls: ['./divider.component.sass'],
-	host: { class : "w-full pt-4" }
-})
-export class DividerComponent implements OnInit {
-	@Input() title: string = "";
+import { AvailabilityComponent } from './availability.component';
 
-	constructor() { }
+describe('AvailabilityComponent', () => {
+  let component: AvailabilityComponent;
+  let fixture: ComponentFixture<AvailabilityComponent>;
 
-	ngOnInit(): void {}
-}
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ AvailabilityComponent ]
+    })
+    .compileComponents();
+  });
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(AvailabilityComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

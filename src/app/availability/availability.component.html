@@ -1,4 +1,4 @@
-﻿<!--
+<!--
  Copyright (C) 2022  Patrick D. Golden, @GoldenChrysus (at GitHub.com), chrysus.dev, or associated affiliates
 
  This program is free software: you can redistribute it and/or modify
@@ -14,8 +14,15 @@
  You should have received a copy of the GNU General Public License
  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
-<app-header></app-header>
-<app-hero></app-hero>
-<app-about></app-about>
-<app-projects></app-projects>
-<app-availability></app-availability>
+<a name="availability"></a>
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8 text-center overflow-x-hidden">
+	<div ngsReveal><app-divider title="availability"></app-divider></div>
+	<div class="grid grid-cols-2">
+		<div class="col" [ngsReveal]="{ delay: 50, origin: item.value.direction, distance: '100%' }" *ngFor="let item of items | keyvalue">
+			<p-card>
+				<h2 class="mt-0 text-green-200">{{item.value.emoji}} {{ "about:" + item.key + "_title" | i18next }}</h2>
+				<span class="text-700 text-lg">{{ "about:" + item.key + "_info" | i18next }}</span>
+			</p-card>
+		</div>
+	</div>
+</div>

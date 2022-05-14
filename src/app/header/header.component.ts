@@ -46,6 +46,11 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 				command : () => this.onClick("projects"),
 			},
 			{
+				label   : this.i18n.t("availability"),
+				icon    : "pi pi-calendar",
+				command : () => this.onClick("availability"),
+			},
+			{
 				label : this.i18n.t("email_me"),
 				icon  : "pi pi-envelope",
 				url   : "mailto:public@chrysus.dev"

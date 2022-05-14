@@ -14,7 +14,7 @@
  You should have received a copy of the GNU General Public License
  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
-<div class="items-center mb-8" style="display: grid; grid-template-columns: repeat(12, 1fr);" ngsRevealSet [ngsInterval]="100" [ngsSelector]="'.reveal'">
+<div class="project items-center mb-8" style="display: grid; grid-template-columns: repeat(12, 1fr);" ngsRevealSet [ngsInterval]="100" [ngsSelector]="'.reveal'">
 	<div class="relative text-right grid-info">
 		<div class="code reveal" style="color: var(--green-200);">{{ "projects:type_" + project.type | i18next: { format: "lowercase" } }} $</div>
 		<h2 class="reveal" style="color: var(--purple-400);">

@@ -1,4 +1,4 @@
-﻿/**
+/**
  *
  * Copyright (C) 2022  Patrick D. Golden, @GoldenChrysus (at GitHub.com), chrysus.dev, or associated affiliates
  *
@@ -15,18 +15,41 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-	selector: 'app-divider',
-	templateUrl: './divider.component.html',
-	styleUrls: ['./divider.component.sass'],
-	host: { class : "w-full pt-4" }
+	selector: 'app-availability',
+	templateUrl: './availability.component.html',
+	styleUrls: ['./availability.component.sass'],
+	host: { id: "availability" }
 })
-export class DividerComponent implements OnInit {
-	@Input() title: string = "";
+export class AvailabilityComponent implements OnInit {
+	items: {[key: string]: Item} = {};
 
 	constructor() { }
 
-	ngOnInit(): void {}
+	ngOnInit(): void {
+		this.items = {
+			employment : {
+				emoji     : "✔️",
+				direction : "left"
+			},
+			freelance : {
+				emoji     : "❌",
+				direction : "right"
+			}
+		};
+	}
+}
+
+enum Direction {
+	left,
+	right,
+	top,
+	bottom
+}
+
+interface Item {
+	emoji: string,
+	direction: keyof typeof Direction
 }
