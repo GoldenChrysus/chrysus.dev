@@ -31,7 +31,7 @@ export class AvailabilityComponent implements OnInit {
 	ngOnInit(): void {
 		this.items = {
 			employment : {
-				emoji     : "✔️",
+				emoji     : "❌", // ✔️
 				direction : "left"
 			},
 			freelance : {
