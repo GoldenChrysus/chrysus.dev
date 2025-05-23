@@ -32,76 +32,87 @@ export class SkillsComponent implements OnInit {
 	ngOnInit(): void {
 		this.skills = [
 			{
-				name  : "php",
-				level : 100,
-				background : "#7377ad"
+				name: "php",
+				level: 100,
+				background: "#7377ad"
 			},
 			{
-				name : "javascript",
-				level : 100,
-				background : "#efd81d",
+				name: "javascript",
+				level: 100,
+				background: "#efd81d",
 				text: "black"
 			},
 			{
-				name : "typescript",
-				level : 100,
-				background : "#2f74c0"
+				name: "typescript",
+				level: 100,
+				background: "#2f74c0"
 			},
 			{
-				name : "postgresql",
-				level : 100,
-				background : "#31648c",
+				name: "postgresql",
+				level: 100,
+				background: "#31648c",
 			},
 			{
-				name : "sql_server",
-				level : 100,
-				background : "#e14b46",
+				name: "sql_server",
+				level: 100,
+				background: "#e14b46",
 			},
 			{
-				name : "graphql",
-				level : 90,
-				background : "#d932a2",
+				name: "ruby",
+				level: 85,
+				background: "#e01520",
 			},
 			{
-				name : "ruby",
-				level : 85,
-				background : "#e01520",
+				name: "python",
+				level: 85,
+				background: "#f1cd43",
+				text: "black"
 			},
 			{
-				name : "python",
-				level : 85,
-				background : "#f1cd43",
-				text : "black"
+				name: "mysql",
+				level: 75,
+				background: "#d88700"
 			},
 			{
-				name : "mysql",
-				level : 75,
-				background : "#d88700"
+				name: "c_sharp",
+				level: 60,
+				background: "#260063"
 			},
 			{
-				name : "c_sharp",
-				level : 60,
-				background : "#260063"
+				name: "aws",
+				level: 60,
+				background: "#f28f00"
 			},
 			{
-				name : "java",
-				level : 60,
-				background : "#e01e23"
+				name: "next_js",
+				level: 60,
+				background: "#000000",
+				text: "white"
 			},
 			{
-				name : "aws",
-				level : 50,
-				background : "#f28f00"
+				name: "docker",
+				level: 60,
+				background: "#228fe1"
 			},
 			{
-				name : "docker",
-				level : 50,
-				background : "#228fe1"
+				name: "google_cloud",
+				level: 50,
+				background: "#de4032"
 			},
 			{
-				name : "google_cloud",
-				level : 50,
-				background : "#de4032"
+				name: "rust",
+				level: 50,
+				background: "#f74b00"
+			},
+			{
+				name: "graphql",
+				level: 50,
+				background: "#d932a2",
+			},
+			{
+				name: "java",
+				level: 40,
+				background: "#e01e23"
 			}
 		];
 	}

@@ -6,5 +6,7 @@
 	"project_chesshq": "Chess HQ",
 	"project_info_chesshq": "A spaced repetition system where chess players can memorize opening repertoires from both white and black players' perspectives. Users can also search a database of millions of chess games, including granular search by move order, player names, and date.",
 	"project_ember_overlay": "Ember Overlay",
-	"project_info_ember_overlay": "An in-game overlay for Final Fantasy 14 that provides real-time processing of combat data with robust customization options. One of the most popular overlays at 32,000 monthly active users."
+	"project_info_ember_overlay": "An in-game overlay for Final Fantasy 14 that provides real-time processing of combat data with robust customization options. One of the most popular overlays at 32,000 monthly active users.",
+	"project_invoiced_ai": "Invoiced.ai",
+	"project_info_invoiced_ai": "Invoiced.ai empowers small businesses to manage accounts payable, accounts receivable, inventory, and billable time. Easy-to-understand UI but powerful like a proper ERP. Offers automations like recurring invoices and auto-billing of client invoices."
 }

@@ -19,6 +19,9 @@
 	"json_api": "JSON:API",
 	"stripe": "Stripe",
 	"react": "React",
+	"rust": "Rust",
+	"next_js": "Next.js",
+	"caddy": "Caddy",
 
 	"employment_title": "Employment opportunities",
 	"employment_info": "I am not currently looking for employment.",

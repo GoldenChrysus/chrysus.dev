@@ -33,11 +33,25 @@ export class ProjectsComponent implements OnInit {
 	ngOnInit(): void {
 		this.projects = [
 			{
-				title : "karutasrs",
-				type  : "website",
-				url   : "https://karutasrs.com",
-				repo  : "https://github.com/GoldenChrysus/KarutaSRS",
-				tech  : [
+				title: "invoiced_ai",
+				type: "website",
+				url: "https://invoiced.ai",
+				repo: "https://github.com/GoldenChrysus/invoiced",
+				tech: [
+					"rust",
+					"next_js",
+					"postgresql",
+					"stripe",
+					"caddy",
+					"aws"
+				]
+			},
+			{
+				title: "karutasrs",
+				type: "website",
+				url: "https://karutasrs.com",
+				repo: "https://github.com/GoldenChrysus/KarutaSRS",
+				tech: [
 					"emberjs",
 					"ruby_on_rails",
 					"postgresql",
@@ -45,11 +59,11 @@ export class ProjectsComponent implements OnInit {
 				]
 			},
 			{
-				title : "chesshq",
-				type  : "website",
-				url   : "https://chesshq.com",
-				repo  : "https://github.com/GoldenChrysus/srschess",
-				tech  : [
+				title: "chesshq",
+				type: "website",
+				url: "https://chesshq.com",
+				repo: "https://github.com/GoldenChrysus/srschess",
+				tech: [
 					"react",
 					"typescript",
 					"ruby_on_rails",
@@ -60,11 +74,11 @@ export class ProjectsComponent implements OnInit {
 				]
 			},
 			{
-				title : "ember_overlay",
-				type  : "web_app",
-				url   : "https://goldenchrysus.github.io/ffxiv/ember-overlay",
-				repo  : "https://github.com/GoldenChrysus/ffxiv-ember-overlay",
-				tech  : [
+				title: "ember_overlay",
+				type: "web_app",
+				url: "https://goldenchrysus.github.io/ffxiv/ember-overlay",
+				repo: "https://github.com/GoldenChrysus/ffxiv-ember-overlay",
+				tech: [
 					"react",
 					"python",
 					"c_sharp"

@@ -1,6 +1,7 @@
 {
   "aws": "AWS",
   "c_sharp": "C#",
+  "caddy": "Caddy",
   "docker": "Docker",
   "emberjs": "Ember.js",
   "employment_info": "就職活動をしておりません。",
@@ -14,12 +15,14 @@
   "javascript": "ジャバスクリプト",
   "json_api": "JSON:API",
   "mysql": "MySQL",
+  "next_js": "Next.js",
   "php": "PHP",
   "postgresql": "PostgreSQL",
   "python": "パイソン",
   "react": "リアクト",
   "ruby": "ルビー",
   "ruby_on_rails": "ルビーオンレイルズ",
+  "rust": "Rust",
   "sql_server": "SQL Server",
   "stripe": "ストライプ",
   "typescript": "TypeScript"
