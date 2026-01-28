@@ -9,7 +9,7 @@ export default async function Blog() {
         const storyblokApi = getStoryblokApi();
         if (storyblokApi) {
             const { data } = await storyblokApi.get("cdn/stories", {
-                version: "draft", // or 'published'
+                version: "published", // or 'published'
                 starts_with: "blog/",
                 is_startpage: false,
             });
@@ -41,7 +41,7 @@ export default async function Blog() {
                                     <Text fw={500}>{story.name}</Text>
                                 </Group>
                                 <Text size="sm" c="dimmed" lineClamp={3}>
-                                    {story.content.teaser || "No summary available"}
+                                    {story.content.summary || "No summary available"}
                                 </Text>
                                 <Button component="a" href={`/blog/${story.slug}`} color="violet" fullWidth mt="md" radius="md">
                                     Read more

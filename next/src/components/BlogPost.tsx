@@ -3,7 +3,6 @@ import { renderRichText } from "@storyblok/react";
 import { Container, Title, Image, Box, Typography } from '@mantine/core';
 
 export const BlogPost = ({ blok }: any) => {
-    console.log(blok)
     return (
         <Container size="md" p={0} {...storyblokEditable(blok)}>
             <Box mb="xl">

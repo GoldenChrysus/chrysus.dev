@@ -3,6 +3,7 @@ import "@/lib/storyblok";
 import { Container, Title } from '@mantine/core';
 import { Header } from '@/components/Header';
 import { StoryblokStory } from "@storyblok/react/rsc";
+import { DateDisplay } from '@/components/DateDisplay';
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params;
@@ -11,7 +12,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     try {
         const storyblokApi = getStoryblokApi();
         const { data } = await storyblokApi.get(`cdn/stories/blog/${slug}`, {
-            version: "draft",
+            version: "published",
         });
         story = data.story;
     } catch (e) {
@@ -27,11 +28,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         )
     }
 
+    console.log(story);
+
     return (
         <main>
             <Header />
             <Container size="md" py="xl" mt={100}>
-                <Title order={1} mb="md">{story.name || "Untitled"}</Title>
+                <Title order={1} mb="xs">{story.name || "Untitled"}</Title>
+                <DateDisplay dateString={story.first_published_at} />
                 <StoryblokStory story={story} />
             </Container>
         </main>
