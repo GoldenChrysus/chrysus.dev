@@ -1,6 +1,6 @@
 "use client";
 
-import { Container, Text, Card, Group, Badge, Image, SimpleGrid, Box, ActionIcon, Title, AspectRatio } from '@mantine/core';
+import { Container, Text, Card, Group, Badge, Image, SimpleGrid, Box, ActionIcon, Title, AspectRatio, CardSection } from '@mantine/core';
 import { SectionDivider } from './SectionDivider';
 import { IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
@@ -61,7 +61,7 @@ export function Projects() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
                             <Card shadow="sm" padding="lg" radius="md" withBorder className={classes.card} bg="dark.7">
-                                <Card.Section className={classes.imageSection}>
+                                <CardSection className={classes.imageSection}>
                                     <AspectRatio ratio={16 / 9}>
                                         <Image
                                             src={`/images/projects/${project.title}.png`}
@@ -82,7 +82,7 @@ export function Projects() {
                                             </ActionIcon>
                                         </Group>
                                     </div>
-                                </Card.Section>
+                                </CardSection>
 
                                 <Box mt="md">
                                     <Group justify="space-between" mb="xs" align="start">

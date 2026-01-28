@@ -1,6 +1,6 @@
 import { StoryblokComponent, getStoryblokApi } from "@storyblok/react";
 import "@/lib/storyblok";
-import { Container, Title, SimpleGrid, Card, Image, Text, Button, Group } from '@mantine/core';
+import { Container, Title, SimpleGrid, Card, Image, Text, Button, Group, CardSection } from '@mantine/core';
 import { Header } from '@/components/Header';
 
 export default async function Blog() {
@@ -30,13 +30,13 @@ export default async function Blog() {
                     <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }}>
                         {stories.map((story: any) => (
                             <Card key={story.uuid} shadow="sm" padding="lg" radius="md" withBorder>
-                                <Card.Section>
+                                <CardSection>
                                     <Image
                                         src={story.content.image?.filename || "https://placehold.co/600x400?text=No+Image"}
                                         height={160}
                                         alt={story.name}
                                     />
-                                </Card.Section>
+                                </CardSection>
                                 <Group justify="space-between" mt="md" mb="xs">
                                     <Text fw={500}>{story.name}</Text>
                                 </Group>

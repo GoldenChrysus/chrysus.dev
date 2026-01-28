@@ -2,6 +2,7 @@
 
 import { Group, Button, Container, Box } from '@mantine/core';
 import { IconUser, IconDeviceDesktop, IconCalendar, IconMail } from '@tabler/icons-react';
+import { usePathname, useRouter } from 'next/navigation';
 
 const items = [
     { label: 'About', icon: IconUser, id: 'about' },
@@ -12,10 +13,24 @@ const items = [
 ];
 
 export function Header() {
-    const scrollTo = (id: string) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+    const pathname = usePathname();
+    const router = useRouter();
+
+    const handleNavigation = (item: typeof items[0]) => {
+        if (item.link) {
+            window.location.href = item.link;
+            return;
+        }
+
+        if (item.id) {
+            if (pathname === '/') {
+                const element = document.getElementById(item.id);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            } else {
+                router.push(`/#${item.id}`);
+            }
         }
     };
 
@@ -29,7 +44,7 @@ export function Header() {
                             variant="subtle"
                             color="gray"
                             leftSection={<item.icon size={16} />}
-                            onClick={() => item.link ? window.location.href = item.link : scrollTo(item.id!)}
+                            onClick={() => handleNavigation(item)}
                         >
                             {item.label}
                         </Button>
