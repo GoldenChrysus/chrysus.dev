@@ -1,6 +1,6 @@
-import { getStoryblokApi, StoryblokComponent } from "@storyblok/react";
+import { getStoryblokApi } from "@storyblok/react";
 import "@/lib/storyblok";
-import { Container, Title, Text, Box } from '@mantine/core';
+import { Container, Title } from '@mantine/core';
 import { Header } from '@/components/Header';
 import { StoryblokStory } from "@storyblok/react/rsc";
 
@@ -10,12 +10,10 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
     try {
         const storyblokApi = getStoryblokApi();
-        if (storyblokApi) {
-            const { data } = await storyblokApi.get(`cdn/stories/blog/${slug}`, {
-                version: "draft",
-            });
-            story = data.story;
-        }
+        const { data } = await storyblokApi.get(`cdn/stories/blog/${slug}`, {
+            version: "draft",
+        });
+        story = data.story;
     } catch (e) {
         console.log("Error fetching story", e);
     }
