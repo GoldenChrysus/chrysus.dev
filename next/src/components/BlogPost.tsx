@@ -1,12 +1,12 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 import { renderRichText } from "@storyblok/react";
-import { Container, Title, Image, Box, TypographyStylesProvider } from '@mantine/core';
+import { Container, Title, Image, Box, Typography } from '@mantine/core';
 
 export const BlogPost = ({ blok }: any) => {
+    console.log(blok)
     return (
-        <Container size="md" {...storyblokEditable(blok)}>
+        <Container size="md" p={0} {...storyblokEditable(blok)}>
             <Box mb="xl">
-                <Title order={1} mb="md">{blok.title || "Untitled"}</Title>
                 {blok.image?.filename && (
                     <Image
                         src={blok.image.filename}
@@ -16,9 +16,9 @@ export const BlogPost = ({ blok }: any) => {
                     />
                 )}
             </Box>
-            <TypographyStylesProvider>
+            <Typography>
                 <div dangerouslySetInnerHTML={{ __html: renderRichText(blok.body) || "" }} />
-            </TypographyStylesProvider>
+            </Typography>
         </Container>
     );
 };
