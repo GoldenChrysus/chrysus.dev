@@ -1,10 +1,14 @@
 import { storyblokInit, apiPlugin } from "@storyblok/react";
+import { BlogPost } from "@/components/BlogPost";
+import { Page } from "@/components/Page";
 
 storyblokInit({
     accessToken: process.env.STORYBLOK_TOKEN || "YOUR_STORYBLOK_TOKEN",
     use: [apiPlugin],
     components: {
-        // Add components here
+        blog: BlogPost,
+        "blog-post": BlogPost,
+        page: Page,
     },
 });
 

@@ -32,18 +32,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <main>
             <Header />
             <Container size="md" py="xl" mt={100}>
-                <Title order={1} mb="lg">{story.name}</Title>
-                {/* Render richer content here usually with a rich text renderer */}
-                <Box>
-                    <Text>{story.content.body ? "Content loaded (rich text rendering to be implemented)" : "No content"}</Text>
-                    {/* 
-                Ideally use @storyblok/rich-text-react-renderer or similar.
-                For now just dumping content or placeholder.
-            */}
-                    <pre style={{ whiteSpace: 'pre-wrap', background: '#f0f0f0', padding: 20, borderRadius: 8, color: 'black' }}>
-                        {JSON.stringify(story.content, null, 2)}
-                    </pre>
-                </Box>
+                <StoryblokComponent blok={story.content} />
             </Container>
         </main>
     );
