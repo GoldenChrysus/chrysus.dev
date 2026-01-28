@@ -1,0 +1,47 @@
+.card {
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--mantine-shadow-md);
+}
+
+.imageSection {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.imageSection:hover .overlay {
+    opacity: 1;
+}
+
+.mobileLinks {
+    display: none;
+}
+
+@media (max-width: 48em) {
+    .overlay {
+        display: none !important;
+    }
+
+    .mobileLinks {
+        display: flex;
+    }
+}
