@@ -15,7 +15,7 @@ export const BlogPost = ({ blok }: any) => {
                     />
                 )}
             </Box>
-            <Typography>
+            <Typography style={{ overflowWrap: "anywhere" }}>
                 <div dangerouslySetInnerHTML={{ __html: renderRichText(blok.body) || "" }} />
             </Typography>
         </Container>
