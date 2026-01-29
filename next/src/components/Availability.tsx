@@ -3,29 +3,33 @@
 import { Container, Text, Card, SimpleGrid, Box } from '@mantine/core';
 import { SectionDivider } from './SectionDivider';
 import { motion } from 'framer-motion';
-
-const items = [
-    {
-        key: "employment",
-        title: "Employment opportunities",
-        info: "I am not currently looking for employment.",
-        emoji: "❌",
-        direction: "left"
-    },
-    {
-        key: "freelance",
-        title: "Freelance opportunities",
-        info: "I am not currently accepting new clients.",
-        emoji: "❌",
-        direction: "right"
-    }
-];
+import { useLingui } from "@lingui/react/macro";
+import { useMemo } from 'react';
 
 export function Availability() {
+    const { t } = useLingui();
+
+    const items = useMemo(() => ([
+        {
+            key: "employment",
+            title: t`Employment opportunities`,
+            info: t`I am not currently looking for employment.`,
+            emoji: "❌",
+            direction: "left"
+        },
+        {
+            key: "freelance",
+            title: t`Freelance opportunities`,
+            info: t`I am not currently accepting new clients.`,
+            emoji: "❌",
+            direction: "right"
+        }
+    ]), [t]);
+
     return (
         <Box id="availability" py={50} pb={100}>
             <Container size="lg">
-                <SectionDivider title="availability" />
+                <SectionDivider title={t`availability`} />
 
                 <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="xl">
                     {items.map((item, index) => (

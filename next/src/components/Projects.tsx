@@ -5,51 +5,54 @@ import { SectionDivider } from './SectionDivider';
 import { IconBrandGithub, IconExternalLink } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import classes from './Projects.module.css';
-
-const projects = [
-    {
-        title: "invoiced_ai",
-        name: "Invoiced.ai",
-        type: "Website",
-        url: "https://invoiced.ai",
-        repo: "https://github.com/GoldenChrysus/invoiced",
-        tech: ["Rust", "Next.js", "PostgreSQL", "Stripe", "Caddy", "AWS"],
-        description: "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
-    },
-    {
-        title: "karutasrs",
-        name: "Karuta SRS",
-        type: "Website",
-        url: "https://karutasrs.com",
-        repo: "https://github.com/GoldenChrysus/KarutaSRS",
-        tech: ["Ember.js", "Ruby on Rails", "PostgreSQL", "JSON:API"],
-        description: "A spaced repetition system to memorize the Ogura Hyakunin Isshu for competition karuta."
-    },
-    {
-        title: "chesshq",
-        name: "Chess HQ",
-        type: "Website",
-        url: "https://chesshq.com",
-        repo: "https://github.com/GoldenChrysus/srschess",
-        tech: ["React", "TypeScript", "Rails", "PostgreSQL", "GraphQL"],
-        description: "Spaced repetition for chess openings and a searchable database of millions of games."
-    },
-    {
-        title: "ember_overlay",
-        name: "Ember Overlay",
-        type: "Web App",
-        url: "https://goldenchrysus.github.io/ffxiv/ember-overlay",
-        repo: "https://github.com/GoldenChrysus/ffxiv-ember-overlay",
-        tech: ["React", "Python", "C#"],
-        description: "Popular FFXIV overlay with real-time combat data processing and robust customization."
-    }
-];
+import { useLingui } from "@lingui/react/macro";
+import { useMemo } from 'react';
 
 export function Projects() {
+    const { t } = useLingui();
+    const projects = useMemo(() => ([
+        {
+            title: "invoiced_ai",
+            name: "Invoiced.ai",
+            type: t`Website`,
+            url: "https://invoiced.ai",
+            repo: "https://github.com/GoldenChrysus/invoiced",
+            tech: ["Rust", "Next.js", "PostgreSQL", "Stripe", "Caddy", "AWS"],
+            description: t`Invoiced.ai empowers small businesses to manage accounts payable and receivable.`
+        },
+        {
+            title: "karutasrs",
+            name: "Karuta SRS",
+            type: t`Website`,
+            url: "https://karutasrs.com",
+            repo: "https://github.com/GoldenChrysus/KarutaSRS",
+            tech: ["Ember.js", "Ruby on Rails", "PostgreSQL", "JSON:API"],
+            description: t`A spaced repetition system to memorize the Ogura Hyakunin Isshu for competition karuta.`
+        },
+        {
+            title: "chesshq",
+            name: "Chess HQ",
+            type: t`Website`,
+            url: "https://chesshq.com",
+            repo: "https://github.com/GoldenChrysus/srschess",
+            tech: ["React", "TypeScript", "Rails", "PostgreSQL", "GraphQL"],
+            description: t`Spaced repetition for chess openings and a searchable database of millions of games.`
+        },
+        {
+            title: "ember_overlay",
+            name: "Ember Overlay",
+            type: t`Web App`,
+            url: "https://goldenchrysus.github.io/ffxiv/ember-overlay",
+            repo: "https://github.com/GoldenChrysus/ffxiv-ember-overlay",
+            tech: ["React", "Python", "C#"],
+            description: t`Popular FFXIV overlay with real-time combat data processing and robust customization.`
+        }
+    ]), [t]);
+
     return (
         <Box id="projects" py={50}>
             <Container size="lg">
-                <SectionDivider title="projects" />
+                <SectionDivider title={t`projects`} />
 
                 <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="xl">
                     {projects.map((project, index) => (

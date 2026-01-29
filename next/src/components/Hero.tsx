@@ -3,6 +3,7 @@
 import { Container, Title, Text, Box, Code } from '@mantine/core';
 import { Socials } from './Socials';
 import { motion } from 'framer-motion';
+import { Trans } from '@lingui/react/macro';
 
 export function Hero() {
     return (
@@ -20,7 +21,7 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
                     <Code c="green.3" fz="sm" mb="xs" bg="transparent" p={0}>
-                        introducing $
+                        <Trans>introducing $</Trans>
                     </Code>
                 </motion.div>
 
@@ -30,7 +31,7 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     <Title order={1} size="4rem" fw={900} lh={1.1} mb="xs">
-                        Patrick Golden
+                        <Trans>Patrick Golden</Trans>
                     </Title>
                 </motion.div>
 
@@ -40,7 +41,7 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
                     <Text size="2.5rem" fw={700} c="violet" lh={1.2} mb="md">
-                        Full-stack engineer
+                        <Trans>Full-stack engineer</Trans>
                     </Text>
                 </motion.div>
 
@@ -50,7 +51,7 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
                     <Text size="xl" c="dimmed" maw={600} mb="xl">
-                        I lead solutions for financial SaaS, education platforms, and AI initiatives.
+                        <Trans>I lead solutions for financial SaaS, education platforms, and AI initiatives.</Trans>
                     </Text>
                 </motion.div>
 
@@ -68,7 +69,7 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.6 }}
                 >
                     <Text size="sm" c="dimmed" mt="xl">
-                        Based in Tokyo, Japan
+                        <Trans>Based in Tokyo, Japan</Trans>
                     </Text>
                 </motion.div>
             </Container>

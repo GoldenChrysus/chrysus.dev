@@ -3,6 +3,7 @@
 import { Container, Text, Paper, Badge, Group, SimpleGrid, Box } from '@mantine/core';
 import { SectionDivider } from './SectionDivider';
 import { motion } from 'framer-motion';
+import { Trans, useLingui } from '@lingui/react/macro';
 
 const skills = [
     { name: "PHP", level: 100, background: "#7377ad", color: "white" },
@@ -24,10 +25,12 @@ const skills = [
 ];
 
 export function About() {
+    const { t } = useLingui();
+
     return (
         <Box id="about" py={50}>
             <Container size="lg">
-                <SectionDivider title="about" />
+                <SectionDivider title={t`about`} />
 
                 <motion.div
                     initial={{ opacity: 0, x: -100 }}
@@ -37,7 +40,7 @@ export function About() {
                 >
                     <Paper shadow="xs" p="xl" withBorder mb={50} bg="dark.7">
                         <Text size="xl" c="dimmed">
-                            I enjoy trying out new technologies to discover interesting ways to approach problems and design solutions. You can find me frequently creating projects on GitHub in a variety of languages and technology stacks.
+                            <Trans>I enjoy trying out new technologies to discover interesting ways to approach problems and design solutions. You can find me frequently creating projects on GitHub in a variety of languages and technology stacks.</Trans>
                         </Text>
                     </Paper>
                 </motion.div>

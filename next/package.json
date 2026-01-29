@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "lingui compile --typescript && next dev",
+    "build": "lingui compile --typescript && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "extract": "lingui extract",
+    "compile": "lingui compile --typescript"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.8.0",
     "@mantine/core": "^8.3.13",
     "@mantine/hooks": "^8.3.13",
     "@next/third-parties": "^16.1.6",
@@ -16,7 +19,9 @@
     "@tabler/icons-react": "^3.36.1",
     "dayjs": "^1.11.19",
     "framer-motion": "^12.29.2",
+    "negotiator": "^1.0.0",
     "next": "16.1.6",
+    "next-intl": "^4.8.0",
     "postcss": "^8.5.6",
     "postcss-preset-mantine": "^1.18.0",
     "postcss-simple-vars": "^7.0.1",
@@ -24,6 +29,11 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@lingui/cli": "^5.9.0",
+    "@lingui/loader": "^5.9.0",
+    "@lingui/macro": "^5.9.0",
+    "@lingui/swc-plugin": "^5.10.1",
+    "@types/negotiator": "^0.6.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

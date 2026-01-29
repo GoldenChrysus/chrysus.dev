@@ -17,19 +17,32 @@ export const metadata: Metadata = {
   description: 'Introducing Patrick Golden, full-stack staff engineer. Extensive experience in leading teams, enterprise development, finance products, and AI initiatives. Based in Tokyo, Japan.',
 };
 
-export default function RootLayout({
+import { I18nProvider } from './I18nProvider';
+import { all_messages, initI18n } from '@/lib/i18n';
+
+global.performance = global.performance || {
+  now: () => Date.now(),
+};
+
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const { locale } = await initI18n();
+
+  console.log(locale)
+
   return (
-    <html lang="en" {...mantineHtmlProps}>
-      <GoogleTagManager gtmId="G-0VNEZTG7PP" />
+    <html lang={locale} {...mantineHtmlProps}>
       <head>
         <ColorSchemeScript defaultColorScheme='auto' />
       </head>
       <body className={inconsolata.className}>
-        <MantineProvider theme={theme} defaultColorScheme='auto'>{children}</MantineProvider>
+        <I18nProvider locale={locale} messages={all_messages[locale]}>
+          <MantineProvider theme={theme} defaultColorScheme='auto'>{children}</MantineProvider>
+          <GoogleTagManager gtmId="G-0VNEZTG7PP" />
+        </I18nProvider>
       </body>
     </html>
   );

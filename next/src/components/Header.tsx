@@ -3,18 +3,21 @@
 import { Group, Button, Container, Box } from '@mantine/core';
 import { IconUser, IconDeviceDesktop, IconCalendar, IconMail } from '@tabler/icons-react';
 import { usePathname, useRouter } from 'next/navigation';
-
-const items = [
-    { label: 'About', icon: IconUser, id: 'about' },
-    { label: 'Projects', icon: IconDeviceDesktop, id: 'projects' },
-    { label: 'Blog', icon: IconDeviceDesktop, link: '/blog' },
-    { label: 'Availability', icon: IconCalendar, id: 'availability' },
-    { label: 'Email Me', icon: IconMail, link: 'mailto:public@chrysus.dev' },
-];
+import { LanguageSwitcher } from './LanguageSwitcher';
+import { useLingui } from '@lingui/react/macro'
 
 export function Header() {
     const pathname = usePathname();
     const router = useRouter();
+    const { t, i18n } = useLingui();
+
+    const items = [
+        { label: t`About`, icon: IconUser, id: 'about' },
+        { label: t`Projects`, icon: IconDeviceDesktop, id: 'projects' },
+        { label: t`Blog`, icon: IconDeviceDesktop, link: '/blog' },
+        { label: t`Availability`, icon: IconCalendar, id: 'availability' },
+        { label: t`Email Me`, icon: IconMail, link: 'mailto:public@chrysus.dev' },
+    ];
 
     const handleNavigation = (item: typeof items[0]) => {
         if (item.link) {
@@ -40,7 +43,7 @@ export function Header() {
                 <Group justify="center">
                     {items.map((item) => (
                         <Button
-                            key={item.label}
+                            key={item.id || item.link}
                             variant="subtle"
                             color="gray"
                             leftSection={<item.icon size={16} />}
@@ -49,6 +52,7 @@ export function Header() {
                             {item.label}
                         </Button>
                     ))}
+                    <LanguageSwitcher currentLocale={i18n.locale} />
                 </Group>
             </Container>
         </Box>
