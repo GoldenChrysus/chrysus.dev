@@ -9,8 +9,11 @@ import { theme } from '../theme';
 const inconsolata = Inconsolata({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Chrysus.dev',
-  description: 'Personal website of Patrick D. Golden',
+  title: {
+    default: 'Patrick Golden - Full-stack staff engineer - Chrysus.dev',
+    template: '%s | Patrick Golden - Chrysus.dev',
+  },
+  description: 'Introducing Patrick Golden, full-stack staff engineer. Extensive experience in leading teams, enterprise development, finance products, and AI initiatives. Based in Tokyo, Japan.',
 };
 
 export default function RootLayout({

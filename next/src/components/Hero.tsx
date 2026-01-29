@@ -50,7 +50,7 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
                     <Text size="xl" c="dimmed" maw={600} mb="xl">
-                        I create solutions for the apps and partnerships ecosystem at Beacon Platform.
+                        I lead solutions for financial SaaS, education platforms, and AI initiatives.
                     </Text>
                 </motion.div>
 

@@ -3,6 +3,13 @@ import "@/lib/storyblok";
 import { Container, Title, SimpleGrid, Card, Image, Text, Button, Group, CardSection } from '@mantine/core';
 import { Header } from '@/components/Header';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Blog',
+    description: 'Read the latest thoughts and tutorials from Patrick Golden.',
+};
+
 export default async function Blog() {
     let stories = [];
     try {

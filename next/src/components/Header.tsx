@@ -35,7 +35,7 @@ export function Header() {
     };
 
     return (
-        <Box component="header" py="md" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 100 }}>
+        <Box bg="var(--mantine-color-body)" component="header" py="md" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 100 }}>
             <Container size="lg">
                 <Group justify="center">
                     {items.map((item) => (
