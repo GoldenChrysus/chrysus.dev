@@ -1,6 +1,6 @@
 "use client";
 
-import { Group, Button, Container, Box } from '@mantine/core';
+import { Group, Button, Container, Box, useMatches } from '@mantine/core';
 import { IconUser, IconDeviceDesktop, IconCalendar, IconMail } from '@tabler/icons-react';
 import { usePathname, useRouter } from 'next/navigation';
 import { LanguageSwitcher } from './LanguageSwitcher';
@@ -37,10 +37,15 @@ export function Header() {
         }
     };
 
+    const gap = useMatches({
+        base: 0,
+        xs: 'xs',
+    });
+
     return (
         <Box bg="var(--mantine-color-body)" component="header" py="md" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 100 }}>
             <Container size="lg">
-                <Group justify="center" gap="xs">
+                <Group justify="center" gap={gap}>
                     {items.map((item) => (
                         <Button
                             key={item.id || item.link}
