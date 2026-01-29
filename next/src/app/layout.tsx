@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inconsolata } from 'next/font/google';
+import { GoogleTagManager } from '@next/third-parties/google';
 import './globals.css';
 import '@mantine/core/styles.css';
 
@@ -23,6 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" {...mantineHtmlProps}>
+      <GoogleTagManager gtmId="G-0VNEZTG7PP" />
       <head>
         <ColorSchemeScript defaultColorScheme='auto' />
       </head>
