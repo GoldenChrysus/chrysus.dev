@@ -6,7 +6,7 @@ import { DateDisplay } from '@/components/DateDisplay';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Blog | Patrick Golden - Chrysus.dev',
+    title: 'Blog',
     description: 'Read the latest thoughts and tutorials from Patrick Golden.',
 };
 
