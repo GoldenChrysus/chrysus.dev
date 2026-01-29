@@ -9,7 +9,7 @@ import classes from './page.module.css';
 
 export default function Home() {
   return (
-    <main>
+    <main style={{ overflowX: 'hidden' }}>
       <Header />
       <Hero />
       <Box className={classes.sectionWrapper}>
