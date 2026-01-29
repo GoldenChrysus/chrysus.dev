@@ -40,7 +40,7 @@ export function Header() {
     return (
         <Box bg="var(--mantine-color-body)" component="header" py="md" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 100 }}>
             <Container size="lg">
-                <Group justify="center">
+                <Group justify="center" gap="xs">
                     {items.map((item) => (
                         <Button
                             key={item.id || item.link}
