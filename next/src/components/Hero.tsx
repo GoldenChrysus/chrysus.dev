@@ -4,6 +4,7 @@ import { Container, Title, Text, Box, Code } from '@mantine/core';
 import { Socials } from './Socials';
 import { motion } from 'framer-motion';
 import { Trans } from '@lingui/react/macro';
+import classes from './Hero.module.css';
 
 export function Hero() {
     return (
@@ -11,7 +12,7 @@ export function Hero() {
             id="hero"
             h="100vh"
             display="flex"
-            style={{ alignItems: 'center' }}
+            className={classes.hero}
             bg="var(--mantine-color-body)"
         >
             <Container size="lg">
