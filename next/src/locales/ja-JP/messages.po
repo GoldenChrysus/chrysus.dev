@@ -17,11 +17,11 @@ msgstr ""
 msgid "A spaced repetition system to memorize the Ogura Hyakunin Isshu for competition karuta."
 msgstr "この間隔反復のサイトで、英語が話せる人は競技かるたをするために小倉百人一首の和歌が覚えられます。"
 
-#: src/components/About.tsx:33
+#: src/components/About.tsx:39
 msgid "about"
 msgstr "私について"
 
-#: src/components/Header.tsx:15
+#: src/components/Header.tsx:17
 msgid "About"
 msgstr "私について"
 
@@ -29,7 +29,7 @@ msgstr "私について"
 msgid "availability"
 msgstr "勤務状況"
 
-#: src/components/Header.tsx:18
+#: src/components/Header.tsx:20
 msgid "Availability"
 msgstr "勤務状況"
 
@@ -38,11 +38,11 @@ msgid "Based in Tokyo, Japan"
 msgstr "東京都に住んでおります"
 
 #: src/app/blog/page.tsx:51
-#: src/components/Header.tsx:17
+#: src/components/Header.tsx:19
 msgid "Blog"
 msgstr "ブログ"
 
-#: src/components/Header.tsx:19
+#: src/components/Header.tsx:21
 msgid "Email Me"
 msgstr "メールで連絡"
 
@@ -66,7 +66,7 @@ msgstr "すみませんが、現在、新しいクライアントを受け入れ
 #~ msgid "I am not currently looking for employment."
 #~ msgstr "就職活動をしておりません。"
 
-#: src/components/About.tsx:43
+#: src/components/About.tsx:49
 msgid "I enjoy trying out new technologies to discover interesting ways to approach problems and design solutions. You can find me frequently creating projects on GitHub in a variety of languages and technology stacks."
 msgstr "わたくしは、問題に取り組み、解決策を設計する興味深い方法が見つけられるように新しいテクノロジーを試すと嬉しいです。よくGitHubで様々なプログラミング言語やテクノロジーでプロジェクトを開発しております。"
 
@@ -81,6 +81,10 @@ msgstr "$ ご紹介"
 #: src/components/Projects.tsx:21
 msgid "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
 msgstr "Invoiced.aiを使う通して中小企業が買掛金、売掛金、在庫、請求可能時間を管理できるとなります。ERPのようにパワフルでもUIが分かりやすいです。定期請求書やクライアント請求書の自動請求などの自動化も可能です。"
+
+#: src/components/Header.tsx:68
+msgid "Menu"
+msgstr "メニュー"
 
 #: src/app/blog/page.tsx:89
 msgid "Next"
@@ -115,7 +119,7 @@ msgstr "前へ"
 msgid "projects"
 msgstr "プロジェクト"
 
-#: src/components/Header.tsx:16
+#: src/components/Header.tsx:18
 msgid "Projects"
 msgstr "プロジェクト"
 

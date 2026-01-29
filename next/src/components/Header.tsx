@@ -1,6 +1,7 @@
 "use client";
 
-import { Group, Button, Container, Box, useMatches } from '@mantine/core';
+import { Group, Button, Container, Box, Burger, Drawer, Stack, useMatches } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
 import { IconUser, IconDeviceDesktop, IconCalendar, IconMail } from '@tabler/icons-react';
 import { usePathname, useRouter } from 'next/navigation';
 import { LanguageSwitcher } from './LanguageSwitcher';
@@ -10,6 +11,7 @@ export function Header() {
     const pathname = usePathname();
     const router = useRouter();
     const { t, i18n } = useLingui();
+    const [opened, { toggle, close }] = useDisclosure(false);
 
     const items = [
         { label: t`About`, icon: IconUser, id: 'about' },
@@ -20,6 +22,7 @@ export function Header() {
     ];
 
     const handleNavigation = (item: typeof items[0]) => {
+        close();
         if (item.link) {
             window.location.href = item.link;
             return;
@@ -37,28 +40,49 @@ export function Header() {
         }
     };
 
-    const gap = useMatches({
-        base: 0,
-        xs: 'xs',
-    });
-
     return (
         <Box bg="var(--mantine-color-body)" component="header" py="md" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 100 }}>
             <Container size="lg">
-                <Group justify="center" gap={gap}>
-                    {items.map((item) => (
-                        <Button
-                            key={item.id || item.link}
-                            variant="subtle"
-                            color="gray"
-                            leftSection={<item.icon size={16} />}
-                            onClick={() => handleNavigation(item)}
-                        >
-                            {item.label}
-                        </Button>
-                    ))}
+                <Group justify="center">
+                    {/* Desktop Navigation */}
+                    <Group gap="xs" visibleFrom="sm">
+                        {items.map((item) => (
+                            <Button
+                                key={item.id || item.link}
+                                variant="subtle"
+                                color="gray"
+                                leftSection={<item.icon size={16} />}
+                                onClick={() => handleNavigation(item)}
+                            >
+                                {item.label}
+                            </Button>
+                        ))}
+                    </Group>
+
+                    {/* Mobile Navigation Toggle */}
+                    <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" aria-label="Toggle navigation" flex={1} />
+
                     <LanguageSwitcher currentLocale={i18n.locale} />
                 </Group>
+
+                <Drawer opened={opened} onClose={close} size="md" title={t`Menu`} padding="md">
+                    <Stack gap="sm">
+                        {items.map((item) => (
+                            <Button
+                                key={item.id || item.link}
+                                variant="subtle"
+                                color="gray"
+                                fullWidth
+                                justify="start"
+                                leftSection={<item.icon size={16} />}
+                                onClick={() => handleNavigation(item)}
+                                size="lg"
+                            >
+                                {item.label}
+                            </Button>
+                        ))}
+                    </Stack>
+                </Drawer>
             </Container>
         </Box>
     );
