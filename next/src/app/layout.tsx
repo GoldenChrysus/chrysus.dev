@@ -15,6 +15,13 @@ export const metadata: Metadata = {
     template: '%s | Patrick Golden - Chrysus.dev',
   },
   description: 'Introducing Patrick Golden, full-stack staff engineer. Extensive experience in leading teams, enterprise development, finance products, and AI initiatives. Based in Tokyo, Japan.',
+  openGraph: {
+    images: ['https://chrysus.dev/images/business/intro.png'],
+  },
+  twitter: {
+    images: ['https://chrysus.dev/images/business/intro.png'],
+    card: 'summary_large_image',
+  },
 };
 
 import { I18nProvider } from './I18nProvider';

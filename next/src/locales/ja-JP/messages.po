@@ -44,7 +44,7 @@ msgstr "ブログ"
 
 #: src/components/Header.tsx:21
 msgid "Email Me"
-msgstr "メールで連絡"
+msgstr "メール"
 
 #: src/components/Availability.tsx:16
 msgid "Employment opportunities"
@@ -76,7 +76,7 @@ msgstr "金融SaaS、教育プラットフォーム、AIイニシアチブのソ
 
 #: src/components/Hero.tsx:24
 msgid "introducing $"
-msgstr "$ ご紹介"
+msgstr "ご紹介 $"
 
 #: src/components/Projects.tsx:21
 msgid "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
