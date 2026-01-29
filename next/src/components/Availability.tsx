@@ -1,10 +1,11 @@
 "use client";
 
-import { Container, Text, Card, SimpleGrid, Box } from '@mantine/core';
+import { Container, Text, Card, SimpleGrid, Box, Group, ThemeIcon } from '@mantine/core';
 import { SectionDivider } from './SectionDivider';
 import { motion } from 'framer-motion';
 import { useLingui } from "@lingui/react/macro";
 import { useMemo } from 'react';
+import { IconCircleX, IconSquareXFilled, IconTriangleFilled, IconTriangleOff, IconTrianglePlus } from '@tabler/icons-react';
 
 export function Availability() {
     const { t } = useLingui();
@@ -13,15 +14,15 @@ export function Availability() {
         {
             key: "employment",
             title: t`Employment opportunities`,
-            info: t`I am not currently looking for employment.`,
-            emoji: "❌",
+            info: t`Recruiters may reach out for roles within Japan or worldwide remote roles.`,
+            icon: <IconTriangleFilled color="var(--mantine-color-yellow-filled)" />,
             direction: "left"
         },
         {
             key: "freelance",
             title: t`Freelance opportunities`,
             info: t`I am not currently accepting new clients.`,
-            emoji: "❌",
+            icon: <IconSquareXFilled color="var(--mantine-color-red-filled)" />,
             direction: "right"
         }
     ]), [t]);
@@ -41,9 +42,12 @@ export function Availability() {
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
                             <Card shadow="sm" p="xl" radius="md" withBorder flex={1}>
-                                <Text fz="1.5rem" fw="bold" c="green.2" mb="sm">
-                                    {item.emoji} {item.title}
-                                </Text>
+                                <Group mb="sm" align="center">
+                                    {item.icon}
+                                    <Text fz="1.5rem" fw="bold" c="green.5">
+                                        {item.title}
+                                    </Text>
+                                </Group>
                                 <Text size="lg" c="dimmed">
                                     {item.info}
                                 </Text>

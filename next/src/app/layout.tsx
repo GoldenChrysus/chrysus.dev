@@ -31,8 +31,6 @@ export default async function RootLayout({
 }) {
   const { locale } = await initI18n();
 
-  console.log(locale)
-
   return (
     <html lang={locale} {...mantineHtmlProps}>
       <head>
