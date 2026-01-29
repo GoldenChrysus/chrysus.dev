@@ -32,7 +32,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         return (
             <main>
                 <Header />
-                <Container size="md" py="xl" mt={100}>
+                <Container size="md" mt={75}>
                     <Title>Post not found</Title>
                 </Container>
             </main>
@@ -42,7 +42,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     return (
         <main>
             <Header />
-            <Container size="md" py="xl" mt={100}>
+            <Container size="md" mt={75}>
                 <Title order={1} mb="xs">{story.name || "Untitled"}</Title>
                 <DateDisplay dateString={story.first_published_at} />
                 <StoryblokStory story={story} />
