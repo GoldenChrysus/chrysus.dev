@@ -22,12 +22,12 @@ export function LanguageSwitcher({ currentLocale }: { currentLocale: string }) {
             </Menu.Target>
 
             <Menu.Dropdown>
-                <Menu.Item onClick={() => switchLanguage('en-US')} bg={currentLocale === 'en-US' ? 'var(--mantine-color-gray-1)' : undefined}>
+                <Menu.Item onClick={() => switchLanguage('en-US')} bg={currentLocale === 'en-US' ? 'var(--mantine-color-blue-light)' : undefined}>
                     <Group gap="xs">
                         <Text size="sm">English</Text>
                     </Group>
                 </Menu.Item>
-                <Menu.Item onClick={() => switchLanguage('ja-JP')} bg={currentLocale === 'ja-JP' ? 'var(--mantine-color-gray-1)' : undefined}>
+                <Menu.Item onClick={() => switchLanguage('ja-JP')} bg={currentLocale === 'ja-JP' ? 'var(--mantine-color-blue-light)' : undefined}>
                     <Group gap="xs">
                         <Text size="sm">日本語</Text>
                     </Group>

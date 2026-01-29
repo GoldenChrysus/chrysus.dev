@@ -38,7 +38,7 @@ export function About() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <Paper shadow="xs" p="xl" withBorder mb={50} bg="dark.7">
+                    <Paper shadow="xs" p="xl" withBorder mb={50}>
                         <Text size="xl" c="dimmed">
                             <Trans>I enjoy trying out new technologies to discover interesting ways to approach problems and design solutions. You can find me frequently creating projects on GitHub in a variety of languages and technology stacks.</Trans>
                         </Text>

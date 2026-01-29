@@ -20,7 +20,7 @@ export function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                    <Code c="green.3" fz="sm" mb="xs" bg="transparent" p={0}>
+                    <Code c="green.8" fz="sm" mb="xs" bg="transparent" p={0}>
                         <Trans>introducing $</Trans>
                     </Code>
                 </motion.div>

@@ -63,7 +63,7 @@ export function Projects() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
-                            <Card shadow="sm" padding="lg" radius="md" withBorder className={classes.card} bg="dark.7">
+                            <Card shadow="sm" padding="lg" radius="md" withBorder className={classes.card}>
                                 <CardSection className={classes.imageSection}>
                                     <AspectRatio ratio={16 / 9}>
                                         <Image

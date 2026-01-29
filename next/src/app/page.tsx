@@ -5,12 +5,14 @@ import { Projects } from '@/components/Projects';
 import { Availability } from '@/components/Availability';
 import { Box } from '@mantine/core';
 
+import classes from './page.module.css';
+
 export default function Home() {
   return (
     <main>
       <Header />
       <Hero />
-      <Box bg="dark.8">
+      <Box className={classes.sectionWrapper}>
         <About />
         <Projects />
         <Availability />
