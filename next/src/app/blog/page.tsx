@@ -21,12 +21,17 @@ export default async function Blog({ searchParams }: { searchParams: Promise<{ p
     try {
         const storyblokApi = getStoryblokApi();
         if (storyblokApi) {
+            // Fetch the Space version to get the latest CV (Cache Version)
+            const space = await storyblokApi.get("cdn/spaces/me", {});
+            const cv = space.data.space.version;
+
             const { data, headers } = await storyblokApi.get("cdn/stories", {
                 version: "published",
                 starts_with: "blog/",
                 is_startpage: false,
                 page: currentPage,
                 per_page: POSTS_PER_PAGE,
+                cv,
             });
             stories = data.stories;
             total = Number((headers as any)['total'] || 0);
