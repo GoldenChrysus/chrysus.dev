@@ -35,12 +35,12 @@ export function Availability() {
                     {items.map((item, index) => (
                         <motion.div
                             key={item.key}
-                            initial={{ opacity: 0, x: item.direction === 'left' ? -50 : 50 }}
+                            initial={{ opacity: 0, x: item.direction === 'left' ? -50 : 50, display: 'flex' }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
-                            <Card shadow="sm" p="xl" radius="md" withBorder>
+                            <Card shadow="sm" p="xl" radius="md" withBorder flex={1}>
                                 <Text fz="1.5rem" fw="bold" c="green.2" mb="sm">
                                     {item.emoji} {item.title}
                                 </Text>

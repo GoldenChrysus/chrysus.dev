@@ -13,23 +13,23 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/Projects.tsx:27
+#: src/components/Projects.tsx:30
 msgid "A spaced repetition system to memorize the Ogura Hyakunin Isshu for competition karuta."
 msgstr "A spaced repetition system to memorize the Ogura Hyakunin Isshu for competition karuta."
 
-#: src/components/About.tsx:31
+#: src/components/About.tsx:33
 msgid "about"
 msgstr "about"
 
-#: src/components/Header.tsx:16
+#: src/components/Header.tsx:15
 msgid "About"
 msgstr "About"
 
-#: src/components/Availability.tsx:29
+#: src/components/Availability.tsx:32
 msgid "availability"
 msgstr "availability"
 
-#: src/components/Header.tsx:19
+#: src/components/Header.tsx:18
 msgid "Availability"
 msgstr "Availability"
 
@@ -37,19 +37,20 @@ msgstr "Availability"
 msgid "Based in Tokyo, Japan"
 msgstr "Based in Tokyo, Japan"
 
-#: src/components/Header.tsx:18
+#: src/app/blog/page.tsx:52
+#: src/components/Header.tsx:17
 msgid "Blog"
 msgstr "Blog"
 
-#: src/components/Header.tsx:20
+#: src/components/Header.tsx:19
 msgid "Email Me"
 msgstr "Email Me"
 
-#: src/components/Availability.tsx:11
+#: src/components/Availability.tsx:15
 msgid "Employment opportunities"
 msgstr "Employment opportunities"
 
-#: src/components/Availability.tsx:18
+#: src/components/Availability.tsx:22
 msgid "Freelance opportunities"
 msgstr "Freelance opportunities"
 
@@ -57,15 +58,15 @@ msgstr "Freelance opportunities"
 msgid "Full-stack engineer"
 msgstr "Full-stack engineer"
 
-#: src/components/Availability.tsx:19
+#: src/components/Availability.tsx:23
 msgid "I am not currently accepting new clients."
 msgstr "I am not currently accepting new clients."
 
-#: src/components/Availability.tsx:12
+#: src/components/Availability.tsx:16
 msgid "I am not currently looking for employment."
 msgstr "I am not currently looking for employment."
 
-#: src/components/About.tsx:41
+#: src/components/About.tsx:43
 msgid "I enjoy trying out new technologies to discover interesting ways to approach problems and design solutions. You can find me frequently creating projects on GitHub in a variety of languages and technology stacks."
 msgstr "I enjoy trying out new technologies to discover interesting ways to approach problems and design solutions. You can find me frequently creating projects on GitHub in a variety of languages and technology stacks."
 
@@ -77,36 +78,61 @@ msgstr "I lead solutions for financial SaaS, education platforms, and AI initiat
 msgid "introducing $"
 msgstr "introducing $"
 
-#: src/components/Projects.tsx:18
+#: src/components/Projects.tsx:21
 msgid "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
 msgstr "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
+
+#: src/app/blog/page.tsx:90
+msgid "Next"
+msgstr "Next"
+
+#: src/app/blog/page.tsx:54
+msgid "No posts found."
+msgstr "No posts found."
+
+#: src/app/blog/page.tsx:65
+msgid "No summary available"
+msgstr "No summary available"
+
+#. placeholder {0}: totalPages || 1
+#: src/app/blog/page.tsx:83
+msgid "Page {currentPage} of {0}"
+msgstr "Page {currentPage} of {0}"
 
 #: src/components/Hero.tsx:34
 msgid "Patrick Golden"
 msgstr "Patrick Golden"
 
-#: src/components/Projects.tsx:45
+#: src/components/Projects.tsx:48
 msgid "Popular FFXIV overlay with real-time combat data processing and robust customization."
 msgstr "Popular FFXIV overlay with real-time combat data processing and robust customization."
 
-#: src/components/Projects.tsx:53
+#: src/app/blog/page.tsx:81
+msgid "Previous"
+msgstr "Previous"
+
+#: src/components/Projects.tsx:55
 msgid "projects"
 msgstr "projects"
 
-#: src/components/Header.tsx:17
+#: src/components/Header.tsx:16
 msgid "Projects"
 msgstr "Projects"
 
-#: src/components/Projects.tsx:36
+#: src/app/blog/page.tsx:68
+msgid "Read more"
+msgstr "Read more"
+
+#: src/components/Projects.tsx:39
 msgid "Spaced repetition for chess openings and a searchable database of millions of games."
 msgstr "Spaced repetition for chess openings and a searchable database of millions of games."
 
-#: src/components/Projects.tsx:41
+#: src/components/Projects.tsx:44
 msgid "Web App"
 msgstr "Web App"
 
-#: src/components/Projects.tsx:14
-#: src/components/Projects.tsx:23
-#: src/components/Projects.tsx:32
+#: src/components/Projects.tsx:17
+#: src/components/Projects.tsx:26
+#: src/components/Projects.tsx:35
 msgid "Website"
 msgstr "Website"

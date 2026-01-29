@@ -4,6 +4,7 @@ import { Container, Title, SimpleGrid, Card, Text, Button, Group } from '@mantin
 import { Header } from '@/components/Header';
 import { DateDisplay } from '@/components/DateDisplay';
 import { Metadata } from 'next';
+import { useLingui } from "@lingui/react/macro";
 
 export const metadata: Metadata = {
     title: 'Blog',
@@ -41,14 +42,15 @@ export default async function Blog({ searchParams }: { searchParams: Promise<{ p
     }
 
     const totalPages = Math.ceil(total / POSTS_PER_PAGE);
+    const { t } = useLingui();
 
     return (
         <main>
             <Header />
             <Container size="lg" py="xl" mt={100}>
-                <Title order={1} mb="xl">Blog</Title>
+                <Title order={1} mb="xl">{t`Blog`}</Title>
                 {stories.length === 0 ? (
-                    <Text>No posts found.</Text>
+                    <Text>{t`No posts found.`}</Text>
                 ) : (
                     <>
                         <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} mb="xl">
@@ -59,10 +61,10 @@ export default async function Blog({ searchParams }: { searchParams: Promise<{ p
                                         {story.name}
                                     </Text>
                                     <Text size="sm" c="dimmed" lineClamp={3} mb="md" style={{ flexGrow: 1 }}>
-                                        {story.content.summary || "No summary available"}
+                                        {story.content.summary || t`No summary available`}
                                     </Text>
                                     <Button component="a" href={`/blog/${story.slug}`} color="violet" fullWidth radius="md">
-                                        Read more
+                                        {t`Read more`}
                                     </Button>
                                 </Card>
                             ))}
@@ -75,16 +77,16 @@ export default async function Blog({ searchParams }: { searchParams: Promise<{ p
                                 disabled={currentPage <= 1}
                                 variant="default"
                             >
-                                Previous
+                                {t`Previous`}
                             </Button>
-                            <Text size="sm">Page {currentPage} of {totalPages || 1}</Text>
+                            <Text size="sm">{t`Page ${currentPage} of ${totalPages || 1}`}</Text>
                             <Button
                                 component="a"
                                 href={`/blog?page=${currentPage + 1}`}
                                 disabled={currentPage >= totalPages}
                                 variant="default"
                             >
-                                Next
+                                {t`Next`}
                             </Button>
                         </Group>
                     </>
