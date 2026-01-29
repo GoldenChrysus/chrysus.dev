@@ -39,8 +39,6 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         )
     }
 
-    console.log(story);
-
     return (
         <main>
             <Header />

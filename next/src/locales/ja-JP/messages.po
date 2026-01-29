@@ -25,7 +25,7 @@ msgstr "私について"
 msgid "About"
 msgstr "私について"
 
-#: src/components/Availability.tsx:32
+#: src/components/Availability.tsx:33
 msgid "availability"
 msgstr "勤務状況"
 
@@ -37,7 +37,7 @@ msgstr "勤務状況"
 msgid "Based in Tokyo, Japan"
 msgstr "東京都に住んでおります"
 
-#: src/app/blog/page.tsx:52
+#: src/app/blog/page.tsx:51
 #: src/components/Header.tsx:17
 msgid "Blog"
 msgstr "ブログ"
@@ -46,11 +46,11 @@ msgstr "ブログ"
 msgid "Email Me"
 msgstr "メールで連絡"
 
-#: src/components/Availability.tsx:15
+#: src/components/Availability.tsx:16
 msgid "Employment opportunities"
 msgstr "雇用機会"
 
-#: src/components/Availability.tsx:22
+#: src/components/Availability.tsx:23
 msgid "Freelance opportunities"
 msgstr "フリーランス"
 
@@ -58,13 +58,13 @@ msgstr "フリーランス"
 msgid "Full-stack engineer"
 msgstr "フルスタックエンジニア"
 
-#: src/components/Availability.tsx:23
+#: src/components/Availability.tsx:24
 msgid "I am not currently accepting new clients."
 msgstr "すみませんが、現在、新しいクライアントを受け入れておりません。"
 
 #: src/components/Availability.tsx:16
-msgid "I am not currently looking for employment."
-msgstr "就職活動をしておりません。"
+#~ msgid "I am not currently looking for employment."
+#~ msgstr "就職活動をしておりません。"
 
 #: src/components/About.tsx:43
 msgid "I enjoy trying out new technologies to discover interesting ways to approach problems and design solutions. You can find me frequently creating projects on GitHub in a variety of languages and technology stacks."
@@ -82,20 +82,20 @@ msgstr "$ ご紹介"
 msgid "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
 msgstr "Invoiced.aiを使う通して中小企業が買掛金、売掛金、在庫、請求可能時間を管理できるとなります。ERPのようにパワフルでもUIが分かりやすいです。定期請求書やクライアント請求書の自動請求などの自動化も可能です。"
 
-#: src/app/blog/page.tsx:90
+#: src/app/blog/page.tsx:89
 msgid "Next"
 msgstr "次へ"
 
-#: src/app/blog/page.tsx:54
+#: src/app/blog/page.tsx:53
 msgid "No posts found."
 msgstr "記事が見つかりませんでした。"
 
-#: src/app/blog/page.tsx:65
+#: src/app/blog/page.tsx:64
 msgid "No summary available"
 msgstr "概要はありません"
 
 #. placeholder {0}: totalPages || 1
-#: src/app/blog/page.tsx:83
+#: src/app/blog/page.tsx:82
 msgid "Page {currentPage} of {0}"
 msgstr "{currentPage} / {0} ページ"
 
@@ -107,7 +107,7 @@ msgstr "パトリック・ゴールデン"
 msgid "Popular FFXIV overlay with real-time combat data processing and robust customization."
 msgstr "様々なカスタマイズオプションで戦闘データを即時に処理するファイナルファンタジー14のゲーム内で使えるオーバーレイです。毎月アクティブユーザーが3万2千人います。"
 
-#: src/app/blog/page.tsx:81
+#: src/app/blog/page.tsx:80
 msgid "Previous"
 msgstr "前へ"
 
@@ -119,9 +119,13 @@ msgstr "プロジェクト"
 msgid "Projects"
 msgstr "プロジェクト"
 
-#: src/app/blog/page.tsx:68
+#: src/app/blog/page.tsx:67
 msgid "Read more"
 msgstr "続きを読む"
+
+#: src/components/Availability.tsx:17
+msgid "Recruiters may reach out for roles within Japan or worldwide remote roles."
+msgstr "日本国内の案件、または世界中のリモート案件について、リクルーターの方からのご連絡をお待ちしております。"
 
 #: src/components/Projects.tsx:39
 msgid "Spaced repetition for chess openings and a searchable database of millions of games."

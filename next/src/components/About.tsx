@@ -10,6 +10,12 @@ const skills = [
     { name: "JavaScript", level: 100, background: "#efd81d", color: "black" },
     { name: "TypeScript", level: 100, background: "#2f74c0", color: "white" },
     { name: "PostgreSQL", level: 100, background: "#31648c", color: "white" },
+
+    { name: "Bedrock", level: 60, background: "#FF9900", color: "white" },
+    { name: "Vertex AI", level: 60, background: "#EA4335", color: "white" },
+    { name: "Applied AI", level: 60, background: "#A9A9A9", color: "white" },
+    { name: "Agentic AI", level: 60, background: "#A9A9A9", color: "white" },
+
     { name: "SQL Server", level: 100, background: "#e14b46", color: "white" },
     { name: "Ruby", level: 85, background: "#e01520", color: "white" },
     { name: "Python", level: 85, background: "#f1cd43", color: "black" },
