@@ -24,7 +24,7 @@ export default function CommentBox() {
           padding-right: 0 !important;
         }
 
-        input, textarea, .horizontal-border-wrapper, .horizontal-border {
+        input, textarea, .horizontal-border-wrapper, .horizontal-border, .fastcomments-message-wrapper {
           background-color: ${input_bg} !important;
           border-color: ${input_border} !important;
         }
@@ -68,7 +68,7 @@ export default function CommentBox() {
           border-radius: 8px !important;
         }
 
-        textarea {
+        textarea, .fastcomments-message-wrapper {
           border-radius: 8px 8px 0 0 !important;
         }
 
@@ -105,6 +105,14 @@ export default function CommentBox() {
 
         button.fast-comments-reply-cancel:hover {
           background-color: ${default_button_hover} !important
+        }
+
+        .comment-input {
+          padding-bottom: 0;
+        }
+
+        .comment-reply-top-bar {
+            margin: 0 0 15px 0 !important;
         }
       `}
         />
