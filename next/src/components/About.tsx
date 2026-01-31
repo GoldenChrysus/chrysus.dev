@@ -1,6 +1,6 @@
 "use client";
 
-import { Container, Text, Paper, Badge, Group, SimpleGrid, Box } from '@mantine/core';
+import { Container, Text, Paper, Badge, SimpleGrid, Box } from '@mantine/core';
 import { SectionDivider } from './SectionDivider';
 import { motion } from 'framer-motion';
 import { Trans, useLingui } from '@lingui/react/macro';

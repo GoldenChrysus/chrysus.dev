@@ -17,7 +17,9 @@
     "@next/third-parties": "^16.1.6",
     "@storyblok/react": "^5.4.21",
     "@tabler/icons-react": "^3.36.1",
+    "commentbox.io": "^2.1.0",
     "dayjs": "^1.11.19",
+    "fastcomments-react": "^4.0.0",
     "framer-motion": "^12.29.2",
     "negotiator": "^1.0.0",
     "next": "16.1.6",
@@ -32,6 +34,7 @@
     "@lingui/loader": "^5.9.0",
     "@lingui/macro": "^5.9.0",
     "@lingui/swc-plugin": "^5.10.1",
+    "@stylistic/eslint-plugin": "^5.7.1",
     "@types/negotiator": "^0.6.4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -39,6 +42,8 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "eslint-plugin-no-relative-import-paths": "^1.6.1",
+    "fastcomments-typescript": "^3.0.12",
     "postcss-simple-vars": "^7.0.1",
     "typescript": "^5"
   }

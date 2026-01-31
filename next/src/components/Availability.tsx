@@ -1,11 +1,11 @@
 "use client";
 
-import { Container, Text, Card, SimpleGrid, Box, Group, ThemeIcon } from '@mantine/core';
+import { Container, Text, Card, SimpleGrid, Box, Group } from '@mantine/core';
 import { SectionDivider } from './SectionDivider';
 import { motion } from 'framer-motion';
 import { useLingui } from "@lingui/react/macro";
 import { useMemo } from 'react';
-import { IconCircleX, IconSquareXFilled, IconTriangleFilled, IconTriangleOff, IconTrianglePlus } from '@tabler/icons-react';
+import { IconSquareXFilled, IconTriangleFilled } from '@tabler/icons-react';
 
 export function Availability() {
     const { t } = useLingui();

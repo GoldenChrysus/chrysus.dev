@@ -1,5 +1,8 @@
 import { match } from '@formatjs/intl-localematcher';
+
+// eslint-disable-next-line
 import linguiConfig from '../../lingui.config';
+
 import { I18n, Messages, setupI18n } from '@lingui/core'
 import Negotiator from 'negotiator';
 import { headers, cookies } from 'next/headers';

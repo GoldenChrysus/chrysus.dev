@@ -1,6 +1,6 @@
 "use client";
 
-import { Divider, Code, Box } from '@mantine/core';
+import { Divider, Code } from '@mantine/core';
 
 interface SectionDividerProps {
     title: string;

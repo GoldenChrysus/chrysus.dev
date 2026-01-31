@@ -1,6 +1,6 @@
-import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
+import { storyblokEditable } from "@storyblok/react";
 import { renderRichText } from "@storyblok/react";
-import { Container, Title, Image, Box, Typography } from '@mantine/core';
+import { Container, Image, Box, Typography } from '@mantine/core';
 
 export const BlogPost = ({ blok }: any) => {
     return (

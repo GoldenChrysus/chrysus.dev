@@ -33,7 +33,7 @@ msgstr "勤務状況"
 msgid "Availability"
 msgstr "勤務状況"
 
-#: src/components/Hero.tsx:72
+#: src/components/Hero.tsx:73
 msgid "Based in Tokyo, Japan"
 msgstr "東京都に住んでおります"
 
@@ -54,7 +54,7 @@ msgstr "雇用機会"
 msgid "Freelance opportunities"
 msgstr "フリーランス"
 
-#: src/components/Hero.tsx:44
+#: src/components/Hero.tsx:45
 msgid "Full-stack engineer"
 msgstr "フルスタックエンジニア"
 
@@ -70,11 +70,11 @@ msgstr "すみませんが、現在、新しいクライアントを受け入れ
 msgid "I enjoy trying out new technologies to discover interesting ways to approach problems and design solutions. You can find me frequently creating projects on GitHub in a variety of languages and technology stacks."
 msgstr "わたくしは、問題に取り組み、解決策を設計する興味深い方法が見つけられるように新しいテクノロジーを試すと嬉しいです。よくGitHubで様々なプログラミング言語やテクノロジーでプロジェクトを開発しております。"
 
-#: src/components/Hero.tsx:54
+#: src/components/Hero.tsx:55
 msgid "I lead solutions for financial SaaS, education platforms, and AI initiatives."
 msgstr "金融SaaS、教育プラットフォーム、AIイニシアチブのソリューションをリードしています。"
 
-#: src/components/Hero.tsx:24
+#: src/components/Hero.tsx:25
 msgid "introducing $"
 msgstr "ご紹介 $"
 
@@ -82,7 +82,11 @@ msgstr "ご紹介 $"
 msgid "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
 msgstr "Invoiced.aiを使う通して中小企業が買掛金、売掛金、在庫、請求可能時間を管理できるとなります。ERPのようにパワフルでもUIが分かりやすいです。定期請求書やクライアント請求書の自動請求などの自動化も可能です。"
 
-#: src/components/Header.tsx:68
+#: src/app/blog/[slug]/page.tsx:52
+msgid "Leave a Comment"
+msgstr "コメント"
+
+#: src/components/Header.tsx:69
 msgid "Menu"
 msgstr "メニュー"
 
@@ -103,7 +107,7 @@ msgstr "概要はありません"
 msgid "Page {currentPage} of {0}"
 msgstr "{currentPage} / {0} ページ"
 
-#: src/components/Hero.tsx:34
+#: src/components/Hero.tsx:35
 msgid "Patrick Golden"
 msgstr "パトリック・ゴールデン"
 

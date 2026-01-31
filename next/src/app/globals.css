@@ -1,3 +1,7 @@
 :root {
   /* Define global variables here if needed, but prefer Mantine theme */
 }
+
+html {
+  scroll-behavior: smooth;
+}

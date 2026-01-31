@@ -5,6 +5,8 @@ import { Header } from '@/components/Header';
 import { DateDisplay } from '@/components/DateDisplay';
 import { Metadata } from 'next';
 import { useLingui } from "@lingui/react/macro";
+import { initI18n } from '@/lib/i18n';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: 'Blog',
@@ -14,6 +16,8 @@ export const metadata: Metadata = {
 const POSTS_PER_PAGE = 9;
 
 export default async function Blog({ searchParams }: { searchParams: Promise<{ page?: string }> }) {
+    await initI18n();
+
     const { page } = await searchParams;
     const currentPage = Number(page) || 1;
     let stories = [];
@@ -42,6 +46,8 @@ export default async function Blog({ searchParams }: { searchParams: Promise<{ p
     }
 
     const totalPages = Math.ceil(total / POSTS_PER_PAGE);
+
+    // eslint-disable-next-line
     const { t } = useLingui();
 
     return (
@@ -63,9 +69,11 @@ export default async function Blog({ searchParams }: { searchParams: Promise<{ p
                                     <Text size="sm" c="dimmed" lineClamp={3} mb="md" style={{ flexGrow: 1 }}>
                                         {story.content.summary || t`No summary available`}
                                     </Text>
-                                    <Button component="a" href={`/blog/${story.slug}`} color="violet" fullWidth radius="md">
-                                        {t`Read more`}
-                                    </Button>
+                                    <Link href={`/blog/${story.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                                        <Button color="violet" fullWidth radius="md">
+                                            {t`Read more`}
+                                        </Button>
+                                    </Link>
                                 </Card>
                             ))}
                         </SimpleGrid>

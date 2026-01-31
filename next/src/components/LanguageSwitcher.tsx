@@ -2,11 +2,8 @@
 
 import { ActionIcon, Menu, Group, Text } from '@mantine/core';
 import { IconLanguage } from '@tabler/icons-react';
-import { useRouter } from 'next/navigation';
 
 export function LanguageSwitcher({ currentLocale }: { currentLocale: string }) {
-    const router = useRouter();
-
     const switchLanguage = (locale: string) => {
         document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000`;
         // Force reload to apply language change

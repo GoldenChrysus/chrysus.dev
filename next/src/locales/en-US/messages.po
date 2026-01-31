@@ -33,7 +33,7 @@ msgstr "availability"
 msgid "Availability"
 msgstr "Availability"
 
-#: src/components/Hero.tsx:72
+#: src/components/Hero.tsx:73
 msgid "Based in Tokyo, Japan"
 msgstr "Based in Tokyo, Japan"
 
@@ -54,7 +54,7 @@ msgstr "Employment opportunities"
 msgid "Freelance opportunities"
 msgstr "Freelance opportunities"
 
-#: src/components/Hero.tsx:44
+#: src/components/Hero.tsx:45
 msgid "Full-stack engineer"
 msgstr "Full-stack engineer"
 
@@ -70,11 +70,11 @@ msgstr "I am not currently accepting new clients."
 msgid "I enjoy trying out new technologies to discover interesting ways to approach problems and design solutions. You can find me frequently creating projects on GitHub in a variety of languages and technology stacks."
 msgstr "I enjoy trying out new technologies to discover interesting ways to approach problems and design solutions. You can find me frequently creating projects on GitHub in a variety of languages and technology stacks."
 
-#: src/components/Hero.tsx:54
+#: src/components/Hero.tsx:55
 msgid "I lead solutions for financial SaaS, education platforms, and AI initiatives."
 msgstr "I lead solutions for financial SaaS, education platforms, and AI initiatives."
 
-#: src/components/Hero.tsx:24
+#: src/components/Hero.tsx:25
 msgid "introducing $"
 msgstr "introducing $"
 
@@ -82,7 +82,11 @@ msgstr "introducing $"
 msgid "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
 msgstr "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
 
-#: src/components/Header.tsx:68
+#: src/app/blog/[slug]/page.tsx:52
+msgid "Leave a Comment"
+msgstr "Leave a Comment"
+
+#: src/components/Header.tsx:69
 msgid "Menu"
 msgstr "Menu"
 
@@ -103,7 +107,7 @@ msgstr "No summary available"
 msgid "Page {currentPage} of {0}"
 msgstr "Page {currentPage} of {0}"
 
-#: src/components/Hero.tsx:34
+#: src/components/Hero.tsx:35
 msgid "Patrick Golden"
 msgstr "Patrick Golden"
 
