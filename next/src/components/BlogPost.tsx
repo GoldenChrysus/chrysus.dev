@@ -1,10 +1,10 @@
 import { storyblokEditable } from "@storyblok/react";
 import { renderRichText } from "@storyblok/react";
-import { Container, Image, Box, Typography } from '@mantine/core';
+import { Image, Box, Typography } from '@mantine/core';
 
 export const BlogPost = ({ blok }: any) => {
     return (
-        <Container size="md" p={0} {...storyblokEditable(blok)}>
+        <Box p={0} {...storyblokEditable(blok)}>
             <Box mb="xl">
                 {blok.image?.filename && (
                     <Image
@@ -18,6 +18,6 @@ export const BlogPost = ({ blok }: any) => {
             <Typography style={{ overflowWrap: "anywhere" }}>
                 <div dangerouslySetInnerHTML={{ __html: renderRichText(blok.body) || "" }} />
             </Typography>
-        </Container>
+        </Box>
     );
 };
