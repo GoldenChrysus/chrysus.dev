@@ -53,7 +53,7 @@ export default async function Blog({ searchParams }: { searchParams: Promise<{ p
     return (
         <main>
             <Header />
-            <Container size="lg" mt={75}>
+            <Container size="lg" mt={75} pb="md">
                 <Title order={1} mb="xl">{t`Blog`}</Title>
                 {stories.length === 0 ? (
                     <Text>{t`No posts found.`}</Text>

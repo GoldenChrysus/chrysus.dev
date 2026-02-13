@@ -5,3 +5,17 @@
 html {
   scroll-behavior: smooth;
 }
+
+.storyblok-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.storyblok-table-wrapper > table {
+  width: 100%;
+}
+
+.storyblok-table-wrapper > table td {
+  overflow-wrap: normal;;
+}

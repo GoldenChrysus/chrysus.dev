@@ -1,8 +1,18 @@
-import { storyblokEditable } from "@storyblok/react";
+import { storyblokEditable, StoryblokRichTextResolvers } from "@storyblok/react";
 import { renderRichText } from "@storyblok/react";
 import { Image, Box, Typography } from '@mantine/core';
+import { useMemo } from 'react';
 
 export const BlogPost = ({ blok }: any) => {
+    const resolvers: StoryblokRichTextResolvers<string | TrustedHTML> = useMemo(() => ({
+        table: ({ children }) => {
+            return (
+                `<div class="storyblok-table-wrapper">
+                    <table>${children.join('')}</table>
+                </div>`
+            );
+        }
+    }), []);
     return (
         <Box p={0} {...storyblokEditable(blok)}>
             <Box mb="xl">
@@ -16,7 +26,7 @@ export const BlogPost = ({ blok }: any) => {
                 )}
             </Box>
             <Typography style={{ overflowWrap: "anywhere" }}>
-                <div dangerouslySetInnerHTML={{ __html: renderRichText(blok.body) || "" }} />
+                <div dangerouslySetInnerHTML={{ __html: renderRichText(blok.body, { resolvers }) || "" }} />
             </Typography>
         </Box>
     );
