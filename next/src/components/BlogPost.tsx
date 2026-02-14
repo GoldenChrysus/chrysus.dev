@@ -8,7 +8,7 @@ export const BlogPost = ({ blok }: any) => {
         table: ({ children }) => {
             return (
                 `<div class="storyblok-table-wrapper">
-                    <table>${children.join('')}</table>
+                    <table>${(Array.isArray(children)) ? children.join('') : children}</table>
                 </div>`
             );
         }
