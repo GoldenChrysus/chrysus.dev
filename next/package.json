@@ -3,18 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "lingui compile --typescript && next dev",
     "build": "lingui compile --typescript && next build",
+    "dev": "lingui compile --typescript && next dev",
     "start": "next start",
     "lint": "eslint",
     "extract": "lingui extract",
-    "compile": "lingui compile --typescript"
+    "compile": "lingui compile --typescript",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.8.0",
     "@mantine/core": "^8.3.13",
     "@mantine/hooks": "^8.3.13",
     "@next/third-parties": "^16.1.6",
+    "@opennextjs/cloudflare": "^1.18.0",
     "@storyblok/react": "^5.4.21",
     "@tabler/icons-react": "^3.36.1",
     "commentbox.io": "^2.1.0",
@@ -45,6 +50,7 @@
     "eslint-plugin-no-relative-import-paths": "^1.6.1",
     "fastcomments-typescript": "^3.0.12",
     "postcss-simple-vars": "^7.0.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.79.0"
   }
 }
