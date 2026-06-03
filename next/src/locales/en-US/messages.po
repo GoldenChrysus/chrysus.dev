@@ -13,15 +13,23 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/components/Projects.tsx:21
+msgid "A sophisticated crypto alerting app with a deceptively simple UI. Users specify combinations of technical alerts like \"RSI > 70\" and \"5m Price > 5m Bollinger Upper\" to create trading signals. The backend system processes live tick data from various crypto exchanges, enriches the data in Flink to calculate indicators, and evaluates user rules in Drools to determine when an alert has been satisfied. Notifications are delivered via push, email, Discord, or Telegram, with automated trading coming soon."
+msgstr "A sophisticated crypto alerting app with a deceptively simple UI. Users specify combinations of technical alerts like \"RSI > 70\" and \"5m Price > 5m Bollinger Upper\" to create trading signals. The backend system processes live tick data from various crypto exchanges, enriches the data in Flink to calculate indicators, and evaluates user rules in Drools to determine when an alert has been satisfied. Notifications are delivered via push, email, Discord, or Telegram, with automated trading coming soon."
+
 #: src/components/Projects.tsx:30
-msgid "A spaced repetition system to memorize the Ogura Hyakunin Isshu for competition karuta."
-msgstr "A spaced repetition system to memorize the Ogura Hyakunin Isshu for competition karuta."
+#~ msgid "A spaced repetition system to memorize the Ogura Hyakunin Isshu for competition karuta."
+#~ msgstr "A spaced repetition system to memorize the Ogura Hyakunin Isshu for competition karuta."
+
+#: src/components/Projects.tsx:39
+msgid "A spaced repetition system to memorize the Ogura Hyakunin Isshu for competition karuta. The website offers a fun interface for memorizing the cards with characters appearing on the cards as you type them, professional audio clips during the review process, translations and historical information about poems, practice tools for rapid recall of cards, and stats about best- and worst-performing cards."
+msgstr "A spaced repetition system to memorize the Ogura Hyakunin Isshu for competition karuta. The website offers a fun interface for memorizing the cards with characters appearing on the cards as you type them, professional audio clips during the review process, translations and historical information about poems, practice tools for rapid recall of cards, and stats about best- and worst-performing cards."
 
 #: src/components/About.tsx:39
 msgid "about"
 msgstr "about"
 
-#: src/components/Header.tsx:17
+#: src/components/Header.tsx:15
 msgid "About"
 msgstr "About"
 
@@ -29,7 +37,7 @@ msgstr "About"
 msgid "availability"
 msgstr "availability"
 
-#: src/components/Header.tsx:20
+#: src/components/Header.tsx:18
 msgid "Availability"
 msgstr "Availability"
 
@@ -37,12 +45,12 @@ msgstr "Availability"
 msgid "Based in Tokyo, Japan"
 msgstr "Based in Tokyo, Japan"
 
-#: src/app/blog/page.tsx:51
-#: src/components/Header.tsx:19
+#: src/app/blog/page.tsx:57
+#: src/components/Header.tsx:17
 msgid "Blog"
 msgstr "Blog"
 
-#: src/components/Header.tsx:21
+#: src/components/Header.tsx:19
 msgid "Email Me"
 msgstr "Email Me"
 
@@ -59,8 +67,12 @@ msgid "Full-stack engineer"
 msgstr "Full-stack engineer"
 
 #: src/components/Availability.tsx:24
-msgid "I am not currently accepting new clients."
-msgstr "I am not currently accepting new clients."
+msgid "I am currently accepting short- and medium-term freelance work."
+msgstr "I am currently accepting short- and medium-term freelance work."
+
+#: src/components/Availability.tsx:24
+#~ msgid "I am not currently accepting new clients."
+#~ msgstr "I am not currently accepting new clients."
 
 #: src/components/Availability.tsx:16
 #~ msgid "I am not currently looking for employment."
@@ -79,31 +91,39 @@ msgid "introducing $"
 msgstr "introducing $"
 
 #: src/components/Projects.tsx:21
-msgid "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
-msgstr "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
+#~ msgid "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
+#~ msgstr "Invoiced.ai empowers small businesses to manage accounts payable and receivable."
 
-#: src/app/blog/[slug]/page.tsx:52
+#: src/components/Projects.tsx:30
+msgid "Invoiced.ai empowers small businesses to manage accounts payable and receivable. Business owners can track time, import time from ClickUp/Asana/Monday, configure recurring or auto-billing AR invoices, track inventory, dynamically mark up products based on weighted vendor costs, visualize their financials with customizable graphs, accept online payments with Stripe, offer their clients a management portal, and many other features to help small businesses manage finances smoothly."
+msgstr "Invoiced.ai empowers small businesses to manage accounts payable and receivable. Business owners can track time, import time from ClickUp/Asana/Monday, configure recurring or auto-billing AR invoices, track inventory, dynamically mark up products based on weighted vendor costs, visualize their financials with customizable graphs, accept online payments with Stripe, offer their clients a management portal, and many other features to help small businesses manage finances smoothly."
+
+#: src/app/blog/[slug]/page.tsx:55
 msgid "Leave a Comment"
 msgstr "Leave a Comment"
 
-#: src/components/Header.tsx:69
+#: src/components/Header.tsx:47
 msgid "Menu"
 msgstr "Menu"
 
-#: src/app/blog/page.tsx:89
+#: src/components/Projects.tsx:17
+msgid "Mobile App"
+msgstr "Mobile App"
+
+#: src/app/blog/page.tsx:97
 msgid "Next"
 msgstr "Next"
 
-#: src/app/blog/page.tsx:53
+#: src/app/blog/page.tsx:59
 msgid "No posts found."
 msgstr "No posts found."
 
-#: src/app/blog/page.tsx:64
+#: src/app/blog/page.tsx:70
 msgid "No summary available"
 msgstr "No summary available"
 
 #. placeholder {0}: totalPages || 1
-#: src/app/blog/page.tsx:82
+#: src/app/blog/page.tsx:90
 msgid "Page {currentPage} of {0}"
 msgstr "Page {currentPage} of {0}"
 
@@ -112,22 +132,26 @@ msgid "Patrick Golden"
 msgstr "Patrick Golden"
 
 #: src/components/Projects.tsx:48
-msgid "Popular FFXIV overlay with real-time combat data processing and robust customization."
-msgstr "Popular FFXIV overlay with real-time combat data processing and robust customization."
+#~ msgid "Popular FFXIV overlay with real-time combat data processing and robust customization."
+#~ msgstr "Popular FFXIV overlay with real-time combat data processing and robust customization."
 
-#: src/app/blog/page.tsx:80
+#: src/components/Projects.tsx:57
+msgid "Popular FFXIV overlay with real-time combat data processing and robust customization. Has 30,000 monthly users and is the only one of its kind to offer highly flexible data customizations including a detailed player view with performance graphs. Offers a spell timer feature which can be used alongside the data overlay to alert users when important spells will soon be ready to use, with the data necessary for this extracted and compiled with C# and Python programs."
+msgstr "Popular FFXIV overlay with real-time combat data processing and robust customization. Has 30,000 monthly users and is the only one of its kind to offer highly flexible data customizations including a detailed player view with performance graphs. Offers a spell timer feature which can be used alongside the data overlay to alert users when important spells will soon be ready to use, with the data necessary for this extracted and compiled with C# and Python programs."
+
+#: src/app/blog/page.tsx:88
 msgid "Previous"
 msgstr "Previous"
 
-#: src/components/Projects.tsx:55
+#: src/components/Projects.tsx:64
 msgid "projects"
 msgstr "projects"
 
-#: src/components/Header.tsx:18
+#: src/components/Header.tsx:16
 msgid "Projects"
 msgstr "Projects"
 
-#: src/app/blog/page.tsx:67
+#: src/app/blog/page.tsx:74
 msgid "Read more"
 msgstr "Read more"
 
@@ -136,15 +160,19 @@ msgid "Recruiters may reach out for roles within Japan or worldwide remote roles
 msgstr "Recruiters may reach out for roles within Japan or worldwide remote roles."
 
 #: src/components/Projects.tsx:39
-msgid "Spaced repetition for chess openings and a searchable database of millions of games."
-msgstr "Spaced repetition for chess openings and a searchable database of millions of games."
+#~ msgid "Spaced repetition for chess openings and a searchable database of millions of games."
+#~ msgstr "Spaced repetition for chess openings and a searchable database of millions of games."
 
-#: src/components/Projects.tsx:44
+#: src/components/Projects.tsx:48
+msgid "Spaced repetition for chess openings and a searchable database of millions of games. The repertoire creator offers highly flexible multi-line opening creation, and the SRS engine traverses the line graph to determine which positions the user needs to review. Integrates with Chess.com and Lichess to allow users to import their games into game collections. Offers a sophisticated openings explorer powered by an interactive chess board to find openings that relate to a given position or sequence of moves with support for transpositions."
+msgstr "Spaced repetition for chess openings and a searchable database of millions of games. The repertoire creator offers highly flexible multi-line opening creation, and the SRS engine traverses the line graph to determine which positions the user needs to review. Integrates with Chess.com and Lichess to allow users to import their games into game collections. Offers a sophisticated openings explorer powered by an interactive chess board to find openings that relate to a given position or sequence of moves with support for transpositions."
+
+#: src/components/Projects.tsx:53
 msgid "Web App"
 msgstr "Web App"
 
-#: src/components/Projects.tsx:17
 #: src/components/Projects.tsx:26
 #: src/components/Projects.tsx:35
+#: src/components/Projects.tsx:44
 msgid "Website"
 msgstr "Website"
