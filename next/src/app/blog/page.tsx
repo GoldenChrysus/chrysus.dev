@@ -8,12 +8,25 @@ import { useLingui } from "@lingui/react/macro";
 import { initI18n } from '@/lib/i18n';
 import Link from 'next/link';
 
-export const metadata: Metadata = {
-    title: 'Blog',
-    description: 'Read the latest thoughts and tutorials from Patrick Golden.',
-};
-
 const POSTS_PER_PAGE = 9;
+
+export async function generateMetadata({
+    searchParams,
+}: {
+    searchParams: Promise<{ page?: string }>;
+}): Promise<Metadata> {
+    const { page } = await searchParams;
+    const currentPage = Number(page) || 1;
+    const canonical = currentPage > 1 ? `/blog?page=${currentPage}` : '/blog';
+
+    return {
+        title: 'Blog',
+        description: 'Read the latest thoughts and tutorials from Patrick Golden.',
+        alternates: {
+            canonical,
+        },
+    };
+}
 
 export default async function Blog({ searchParams }: { searchParams: Promise<{ page?: string }> }) {
     await initI18n();

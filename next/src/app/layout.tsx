@@ -6,10 +6,12 @@ import '@mantine/core/styles.css';
 
 import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from '@mantine/core';
 import { theme } from '@/theme';
+import { siteUrl } from '@/lib/site';
 
 const inconsolata = Inconsolata({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+    metadataBase: new URL(siteUrl),
     title: {
         default: 'Patrick Golden - Full-stack staff engineer - Chrysus.dev',
         template: '%s | Patrick Golden - Chrysus.dev',
